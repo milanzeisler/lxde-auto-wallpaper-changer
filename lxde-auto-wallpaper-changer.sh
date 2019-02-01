@@ -6,7 +6,7 @@
 # Version: 1.0
 
 while true; do
-    wallpaper = $(ls /home/$USER/Pictures | shuf -n 1)
+    wallpaper=$(ls /home/$USER/Pictures | shuf -n 1)
     pcmanfm --set-wallpaper=/home/$USER/Pictures/$wallpaper
     sleep 5
 done
